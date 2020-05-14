@@ -27,7 +27,7 @@ pipeline{
                 agent any //{label 'winslave1'}
                 steps{
                     //git 'https://github.com/Ashishnmodi/DevOpsClassCodes.git'
-                    bat 'mvn test'
+                    sh 'mvn test'
                 }
                 post{
                     always{
