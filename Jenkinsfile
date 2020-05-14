@@ -1,3 +1,4 @@
+//for running pipeline
 pipeline{
     tools{
         jdk 'myjava'
