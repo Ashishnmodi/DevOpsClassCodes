@@ -24,9 +24,9 @@ pipeline{
                 }
             }
             stage('UnitTest'){
-                agent {label 'winslave1'}
+                agent any //{label 'winslave1'}
                 steps{
-                    git 'https://github.com/Ashishnmodi/DevOpsClassCodes.git'
+                    //git 'https://github.com/Ashishnmodi/DevOpsClassCodes.git'
                     bat 'mvn test'
                 }
                 post{
